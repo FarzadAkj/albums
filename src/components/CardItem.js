@@ -12,6 +12,7 @@ const CardItem = (props) => {
 const styles = {
   containerStyle: {
     borderBottomWidth: 1,
+    borderBottomColor: '#ddd',
     padding: 5,
     backgroundColor: '#fff',
     justifyContent: 'flex-start',

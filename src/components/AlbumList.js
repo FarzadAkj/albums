@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, Image } from 'react-native';
+import { ScrollView, View, Text, Image } from 'react-native';
 
 import Card from './Card';
 import CardItem from './CardItem';
@@ -22,15 +22,22 @@ renderAlbums = (album) => {
           <Text>{album.artist}</Text>
         </View>
       </CardItem>
+
+      <CardItem>
+        <Image
+          source={{ uri: album.image }}
+          style={{ width: null, flex: 1, height: 300 }}
+          />
+      </CardItem>
     </Card>
   );
 }
 
 const AlbumList = (props) => {
   return (
-    <View>
+    <ScrollView>
       {props.data.map(album => renderAlbums(album))}
-    </View>
+    </ScrollView>
   );
 }
 
