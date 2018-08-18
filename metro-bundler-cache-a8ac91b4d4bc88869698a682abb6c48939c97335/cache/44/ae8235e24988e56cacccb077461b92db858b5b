@@ -1,0 +1,4 @@
+module.exports = {
+  "name": "albums",
+  "displayName": "albums"
+};
