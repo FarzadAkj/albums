@@ -22,7 +22,7 @@ class App extends Component {
     return (
       <View style={styles.containerStyle}>
         <Header title="Albums!" />
-        <AlbumList />
+        <AlbumList data={this.state.albums} />
       </View>
     );
   }
