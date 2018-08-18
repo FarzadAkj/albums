@@ -1,11 +1,16 @@
 import React from 'react';
-import { ScrollView, View, Text, Image } from 'react-native';
+import { ScrollView, View, Text, Image, Linking } from 'react-native';
 
 import Card from './Card';
 import CardItem from './CardItem';
 import Button from './Button';
 
 // https://teamairship.com/wp-content/uploads/2017/10/react-native-workshop.jpg
+
+onAlbumClicked = (albumURL) => {
+  // console.log('pressed');
+  Linking.openURL(albumURL);
+}
 
 renderAlbums = (album) => {
   return (
@@ -32,7 +37,9 @@ renderAlbums = (album) => {
       </CardItem>
 
       <CardItem>
-        <Button>
+        <Button
+          onPress={this.onAlbumClicked.bind(this, album.url)}
+          >
           Click Me!
         </Button>
       </CardItem>
