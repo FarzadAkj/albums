@@ -1,13 +1,15 @@
 import React from 'react';
 import { View, Text } from 'react-native';
 
+import Card from './Card';
+
 renderAlbums = (album) => {
   return (
-    <View key={album.url}>
+    <Card key={album.url}>
       <Text>
         {album.title}
       </Text>
-    </View>
+    </Card>
   );
 }
 
