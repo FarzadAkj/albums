@@ -3,6 +3,7 @@ import { ScrollView, View, Text, Image } from 'react-native';
 
 import Card from './Card';
 import CardItem from './CardItem';
+import Button from './Button';
 
 // https://teamairship.com/wp-content/uploads/2017/10/react-native-workshop.jpg
 
@@ -28,6 +29,12 @@ renderAlbums = (album) => {
           source={{ uri: album.image }}
           style={{ width: null, flex: 1, height: 300 }}
           />
+      </CardItem>
+
+      <CardItem>
+        <Button>
+          Click Me!
+        </Button>
       </CardItem>
     </Card>
   );
