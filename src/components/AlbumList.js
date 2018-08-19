@@ -18,7 +18,7 @@ renderAlbums = (album) => {
       <CardItem>
         <View style={styles.thubmnailContainerStyle}>
           <Image
-            source={{ uri: "https://teamairship.com/wp-content/uploads/2017/10/react-native-workshop.jpg" }}
+            source={{ uri: album.thumbnail_image }}
             style={{ width: 50, height: 50, borderRadius: 5 }}
             />
         </View>

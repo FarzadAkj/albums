@@ -5,7 +5,7 @@ import axios from 'axios';
 import Header from './src/components/Header';
 import AlbumList from './src/components/AlbumList';
 
-// http://rallycoding.herokuapp.com/api/music_albums
+// http://23.227.201.71:3100/albums
 
 class App extends Component {
   constructor(props) {
@@ -28,7 +28,7 @@ class App extends Component {
   }
 
   componentDidMount() {
-    axios.get("http://rallycoding.herokuapp.com/api/music_albums")
+    axios.get("http://23.227.201.71:3100/albums")
     .then(response => {
       console.log('response: ', response);
 
